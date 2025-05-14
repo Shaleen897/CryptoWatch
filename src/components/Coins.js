@@ -21,7 +21,7 @@ const Coins = ({ props }) => {
                     </div>
                     {props.map((coin) => {
                         return (<div >
-                            <Link to={`/coins/${coin.id}`}>
+                            <Link to={`/coins/${coin.id}`} key={coin.id}>
                                 <ul key={coin.id} className='flex justify-between items-center border border-black hover:bg-slate-500 rounded py-4 px-2 mt-3 hover:-translate-y-2 ease-in-out duration-300'>
                                     <li>{coin.market_cap_rank}</li>
                                     <li className='flex uppercase mt-4'>
